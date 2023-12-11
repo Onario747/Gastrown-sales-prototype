@@ -1,0 +1,148 @@
+.SpecialServicesComp-container {
+  width: min(100%, 90em);
+  width: 100%;
+  background: rgba(7, 82, 120, 0.08);
+  // height: 40rem;
+  padding: 2rem 4.5rem 2rem 0rem;
+  position: relative;
+
+  @media screen and (max-width: 850px) {
+    padding: 3rem 1.5rem;
+  }
+
+  .christmas_tree {
+    position: absolute;
+    bottom: -1.1rem;
+    right: 3rem;
+    z-index: -1;
+    display: block;
+    float: right;
+    width: 13rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.grid_special-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  place-items: center;
+
+  @media screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  &__img {
+    // width: 40rem;
+    // height: 32em;
+
+    img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  @media screen and (max-width: 1202px) {
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__txt {
+    .grid_special-services__header {
+      @media screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: #0094d7;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 15px;
+        line-height: normal;
+
+        @media screen and (max-width: 850px) {
+          font-size: 1.7rem;
+        }
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Inter", sans-serif;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 300;
+        text-align: center;
+        line-height: normal;
+
+        @media screen and (max-width: 850px) {
+          font-size: 0.99rem;
+        }
+      }
+    }
+  }
+
+  .grid_special-services__btns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+
+    @media screen and (max-width: 450px) {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    .grid_special-services-btn {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 0.5rem;
+      width: 100%;
+      gap: 0.6rem;
+      border-radius: 0.5rem;
+      background: #fff;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      .special-services-gift-img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      span {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+
+        @media screen and (max-width: 1120px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

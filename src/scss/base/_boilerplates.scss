@@ -1,0 +1,19 @@
+@use "../util" as u;
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: u.$fonts;
+    overflow-x: hidden;
+}
