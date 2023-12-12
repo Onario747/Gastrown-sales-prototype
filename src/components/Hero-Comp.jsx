@@ -6,9 +6,9 @@ import hero_btn_icon from "../images/santa-clause.png";
 
 import "../scss/layout/_hero.scss";
 
-const HeroComp = () => {
+const HeroComp = ({isMobileNavOpen}) => {
   return (
-    <div className="HeroComp-container">
+    <div className={`HeroComp-container ${isMobileNavOpen ? 'hero-down' : ''}`}>
       <div className="grid">
         <div className="grid__text">
           <h1>

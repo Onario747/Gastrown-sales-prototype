@@ -12,6 +12,10 @@
   @media screen and (max-width: 850px) {
     padding: 4rem 1.5rem 0 1.5rem;
   }
+
+  &.hero-down {
+    margin-top: 15rem;
+  }
 }
 
 .grid {
@@ -147,6 +151,7 @@
     padding: 0.75rem 1.625rem;
     cursor: pointer;
     gap: 0.625rem;
+    transition: all 0.3s;
 
     a {
       color: rgba(0, 0, 0, 0.5);
@@ -166,6 +171,13 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .hero-btn:hover {
+    background-color: #48bcf1;
+    a {
+      color: #fff;
     }
   }
 }
