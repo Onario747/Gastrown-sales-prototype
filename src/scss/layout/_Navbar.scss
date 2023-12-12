@@ -5,6 +5,10 @@
   // border: 1px solid #ff000f;
   padding: 2em 5em;
   height: 6.25rem;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
 
   @media screen and (max-width: 1120px) {
     padding: 2rem;
